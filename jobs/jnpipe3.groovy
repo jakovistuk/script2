@@ -5,14 +5,12 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                sh 'ls'
-                sh 'ssa'
+                sh 'ls -halt'
 
             }
         }
         stage('Stage 2') {
             steps {
-                input('AAAAAAAAA')
                 input message: 'Approve Deploy?', ok: 'Yes'
                 sh 'ls'
             }
