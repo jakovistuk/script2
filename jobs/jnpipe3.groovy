@@ -6,8 +6,8 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                helloWorld 
-                helloWorld 
+                helloWorld()
+                helloWorld() 
                 sh 'ls -halt'
 
             }
