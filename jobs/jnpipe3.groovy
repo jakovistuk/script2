@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-                input message: 'Approve Deploy?', ok: 'Yes'
+                //input message: 'Approve Deploy?', ok: 'Yes'
                 sh 'ls'
             }
         }
