@@ -8,6 +8,7 @@ pipeline {
             steps {
                 helloWorld()
                 helloWorld() 
+                hello2('marko')
                 sh 'ls -halt'
 
             }
