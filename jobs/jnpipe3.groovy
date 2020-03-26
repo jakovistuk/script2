@@ -6,6 +6,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 sh 'ls'
+                sh 'ssa'
+
             }
         }
         stage('Stage 2') {
